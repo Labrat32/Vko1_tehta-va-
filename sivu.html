@@ -48,10 +48,9 @@
       }
 
       .image{
-        background-image: url("Ruokalista.jpg");
+        background-image: url("Materials/black-frying-pan-with-spaghetti-sauce-near-brown-wooden-691114.jpeg");
         background-repeat: no-repeat;
         background-position: center center;
-        /* background-attachment: fixed; */
         background-size: cover;
         clip-path: polygon(5% 0, 100% 0, 100% 100%, 15% 100%);
         height: 100%;
@@ -136,6 +135,11 @@
           border-radius: 10px;
           border: 1px solid rgb(255, 105, 50);
       }
+
+      .searchBar{
+        display: inline-flex;
+      }
+      
       
     </style>
   </head>
@@ -149,7 +153,10 @@
             <li><a href="">Ruokalistat</a></li>
             <li><a href="">Ravintolat</a></li>
             <li><a href="">Yhteystiedot</a></li>
-            <input type="text" placeholder="Hae ravintolan nimellä...">
+            <div class="searchBar">
+              <img src="Materials/noun_Search_781957.svg" style="cursor: pointer; height: 100%;" onclick="alert('search: ' + document.querySelector('#search').value);">
+              <input type="text" placeholder="Hae ravintolan nimellä...">
+            </div>
           </ul>
         </div>
         <div class="item bannerArea">
